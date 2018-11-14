@@ -1,3 +1,9 @@
+/**
+ * Web security part 1 - SQL injection
+ * @author Anil Kumar (https://github.com/anil-ajax)
+ * REFER TO README on how to use this code
+ */
+
 <form action="" method="post">
 <input name='username'>
 <input name='password'>
@@ -12,7 +18,7 @@ $db = new mysqli("localhost", "root", "root123", "pentest");
 
 if($_POST['submit']) {
 	$username = $_POST['username'];
-	$password = $_POST['password'];
+	$password = $_POST['password']; 
 
 	$q = "select * from users where username='$username' && password='$password' limit 1";
 
