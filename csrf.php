@@ -8,8 +8,7 @@ session_write_close();
 
 <form method="post" action="csrf.php">
 <input type="hidden" name="token" value="<?php echo $token; ?>" />
-Confirm action?
-<input type="submit" value="Confirm" />
+Confirm action? <input type="submit" value="Confirm" />
 </form>
 
 
