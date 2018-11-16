@@ -1,7 +1,7 @@
 <?php
 session_start();
 $token= md5(uniqid());
-$_SESSION['delete_customer_token']= $token;
+$_SESSION['token']= $token;
 session_write_close();
 ?>
 
@@ -15,8 +15,8 @@ Confirm action?
 
 <?php
 session_start();
-$token = $_SESSION['delete_customer_token'];
-unset($_SESSION['delete_customer_token']);
+$token = $_SESSION['token'];
+unset($_SESSION['token']);
 session_write_close();
 
 if ($token && $_POST['token']==$token) {
