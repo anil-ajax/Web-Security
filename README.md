@@ -5,3 +5,6 @@ Refer to sql_injection.php. Copy this file to your local web enviroment e.g. xam
 
 ## Part 2 - XSS (Cross Site Scripting)
 Refer to xss.php how to avoid XSS in your site.
+
+## Part 3 - CSRF (Cross Site Request Forgery)
+Refer to csrf.php how to avoid CSRF in your site.
